@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天天 | 一只拉布拉多的日常</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="nav">
+        <div class="nav-brand">🐾 天天</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#gallery">瞬间</a></li>
+            <li><a href="#stories">日记</a></li>
+            <li><a href="#about">关于</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">拉布拉多 · 8岁 · 女生 · 2018年2月出生</div>
+            <h1 class="hero-title">天天</h1>
+            <p class="hero-desc">一只在2018年2月来到这个世界的拉布拉多。擅长吃饭、游泳、在沙发上摆出各种奇怪姿势。</p>
+            <div class="hero-tags">
+                <span class="tag">吃货认证</span>
+                <span class="tag">游泳健将</span>
+                <span class="tag">资深宅女</span>
+                <span class="tag">超黏人精</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-avatar">
+                <div class="avatar-glow"></div>
+                <img src="WechatIMG874.jpg" alt="天天" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;">
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片墙 - 手风琴式展开卡片 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">天天的瞬间</h2>
+                <p class="section-subtitle">点击卡片查看</p>
+            </div>
+            
+            <div class="accordion-slider" id="accordionSlider">
+                <div class="accordion-card active" data-index="0" onclick="expandCard(this)">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #c4956a 0%, #a87d4f 100%);"></div>
+                    <video class="card-video" autoplay loop muted playsinline poster="">
+                        <source src="video1_small.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <h3>午后瘫</h3>
+                        <p>阳光正好，地板正暖</p>
+                    </div>
+                    <div class="card-icon">😴</div>
+                </div>
+                
+                <div class="accordion-card" data-index="1" onclick="expandCard(this)">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #7dae7d 0%, #5a9a5a 100%);"></div>
+                    <video class="card-video" autoplay loop muted playsinline poster="">
+                        <source src="video2_small.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <h3>公园追鸽</h3>
+                        <p>一只都没追到但很开心</p>
+                    </div>
+                    <div class="card-icon">🏃</div>
+                </div>
+                
+                <div class="accordion-card" data-index="2" onclick="expandCard(this)">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #e8a87c 0%, #d4956a 100%);"></div>
+                    <video class="card-video" autoplay loop muted playsinline poster="">
+                        <source src="video3_small.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-content">
+                        <h3>洗澡苦难</h3>
+                        <p>水是最大的敌人</p>
+                    </div>
+                    <div class="card-icon">🛁</div>
+                </div>
+                
+                <div class="accordion-card" data-index="3" onclick="expandCard(this)">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #8ab6c1 0%, #6a9aa8 100%);"></div>
+                    <div class="card-content">
+                        <h3>天生泳者</h3>
+                        <p>第一次就爱上水</p>
+                    </div>
+                    <div class="card-icon">🏊</div>
+                </div>
+                
+                <div class="accordion-card" data-index="4" onclick="expandCard(this)">
+                    <div class="card-bg" style="background: linear-gradient(135deg, #b8a8c8 0%, #9a88a8 100%);"></div>
+                    <div class="card-content">
+                        <h3>网球猎手</h3>
+                        <p>用脸接住的也算</p>
+                    </div>
+                    <div class="card-icon">🎾</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 日记 -->
+    <section id="stories" class="stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">天天日记</h2>
+                <p class="section-subtitle">点击展开阅读</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card" onclick="toggleStory(this)">
+                    <div class="story-image" style="background: linear-gradient(135deg, #e8a87c 0%, #d4956a 100%);">
+                        <span>🍖</span>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">2019 · 厨房</span>
+                            <span class="story-tag">犯罪现场</span>
+                        </div>
+                        <h4>偷吃牛排事件</h4>
+                        <p class="story-excerpt">那天我妈煎了一块牛排，放在桌上晾着。她说就离开了一分钟...</p>
+                        <div class="story-full">
+                            <p>一分钟，对一只拉布拉多来说，够了。</p>
+                            <p>监控录像显示：我先是假装路过，然后确认没人，最后——整个盘子都干净了。</p>
+                            <p>代价：三天没零食。但我至今不后悔。</p>
+                        </div>
+                        <span class="story-toggle">展开 ↓</span>
+                    </div>
+                </div>
+
+                <div class="story-card" onclick="toggleStory(this)">
+                    <div class="story-image" style="background: linear-gradient(135deg, #7dae7d 0%, #5a9a5a 100%);">
+                        <span>🏊</span>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">2019 · 游泳池</span>
+                            <span class="story-tag">天赋觉醒</span>
+                        </div>
+                        <h4>第一次游泳</h4>
+                        <p class="story-excerpt">我妈说我被抱到水边的时候，后腿一直在抖...</p>
+                        <div class="story-full">
+                            <p>但当我闻到水里有别的狗的味道，我跳下去了。</p>
+                            <p>然后我发现——我会游泳。不是那种扑腾的，是标准的狗刨式，优雅，从容。</p>
+                            <p>从此每个夏天，我都盼着去河边。</p>
+                        </div>
+                        <span class="story-toggle">展开 ↓</span>
+                    </div>
+                </div>
+
+                <div class="story-card" onclick="toggleStory(this)">
+                    <div class="story-image" style="background: linear-gradient(135deg, #c4956a 0%, #a87d4f 100%);">
+                        <span>🛋️</span>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">2020 · 客厅</span>
+                            <span class="story-tag">领土战争</span>
+                        </div>
+                        <h4>沙发保卫战</h4>
+                        <p class="story-excerpt">我妈买的新沙发，说我不能上。我懂了...</p>
+                        <div class="story-full">
+                            <p>所以我等她上班后，再上去。</p>
+                            <p>直到某天她提前回家，开门的那一刻——我趴在沙发正中间，嘴里叼着她的拖鞋。</p>
+                            <p>现在沙发的右边那个凹坑，是我的专座。我赢了。</p>
+                        </div>
+                        <span class="story-toggle">展开 ↓</span>
+                    </div>
+                </div>
+
+                <div class="story-card" onclick="toggleStory(this)">
+                    <div class="story-image" style="background: linear-gradient(135deg, #b8a8c8 0%, #9a88a8 100%);">
+                        <span>🦴</span>
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-date">2021 · 全家</span>
+                            <span class="story-tag">寻宝游戏</span>
+                        </div>
+                        <h4>藏骨头被我忘了</h4>
+                        <p class="story-excerpt">我妈给了一根大骨头，我没舍得吃完，决定藏起来...</p>
+                        <div class="story-full">
+                            <p>藏在了沙发垫下面。然后我发现——我忘了。</p>
+                            <p>整整一周，家里一直有股神秘的臭味。</p>
+                            <p>最后我妈翻遍了全家，在沙发垫下面找到了那块已经变质的骨头。我假装不认识它。</p>
+                        </div>
+                        <span class="story-toggle">展开 ↓</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-card">
+                <div class="about-visual">
+                    <div class="about-avatar">
+                        <div class="about-avatar-glow"></div>
+                        <img src="WechatIMG874.jpg" alt="天天" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;">
+                    </div>
+                    <h3>天天</h3>
+                    <p class="about-role">专业吃货 · 兼职游泳教练</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-row">
+                        <span class="info-label">品种</span>
+                        <span class="info-value">拉布拉多</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">毛色</span>
+                        <span class="info-value">浅黄色</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">生日</span>
+                        <span class="info-value">2018年2月</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">体重</span>
+                        <span class="info-value">30kg（标准身材）</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">特长</span>
+                        <span class="info-value">吃、睡、装无辜、掉毛</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">最爱</span>
+                        <span class="info-value">吃、奔跑撒欢、妈妈</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-section">
+                <div class="quote-mark">"</div>
+                <p class="quote-text">天天不是一只普通的狗。它是那种——你难过时会悄悄把下巴搁在你膝盖上、你开心时会叼着玩具围着你转的狗。</p>
+                <span class="quote-author">— 天天的铲屎官</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">🐾 天天的世界</div>
+            <p class="footer-desc">做一只快乐的吃货，过一条狗该过的日子</p>
+            <p class="footer-copy">由天天的铲屎官手工制作 · 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
